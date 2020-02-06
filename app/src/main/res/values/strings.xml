@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">WhichMarvel</string>
+    <string name="app_name">App da Pri</string>
+    <string name="consult">Consultar</string>
+    <string name="character">Qual personagem da Marvel você é?</string>
 </resources>
