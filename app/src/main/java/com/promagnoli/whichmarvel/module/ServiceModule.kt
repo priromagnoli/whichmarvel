@@ -12,10 +12,10 @@ private const val MARVEL_URL: String = "https://gateway.marvel.com:443/v1/public
 class ServiceModule {
 
     @Provides
-    fun providesMarvelService(): MarvelService = Retrofit.Builder()
+    fun providesMarvelService(): MarvelModule = Retrofit.Builder()
         .baseUrl(MARVEL_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()
-        .create(MarvelService::class.java)
+        .create(MarvelModule::class.java)
 }

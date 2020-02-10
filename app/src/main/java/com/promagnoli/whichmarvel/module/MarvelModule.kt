@@ -5,7 +5,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class MarvelService(private val consultDetailsActivity: ConsultDetailsActivity) {
+class MarvelModule(private val consultDetailsActivity: ConsultDetailsActivity) {
 
     @Provides
     fun providesConsultDetailsActivity(): ConsultDetailsActivity = consultDetailsActivity
